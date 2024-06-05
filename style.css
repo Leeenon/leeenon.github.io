@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(92, 92, 92);
+    margin: 0;
+    padding: 0;
+}
+
+.menu-top {
+    padding: 15px 0; 
+    display: flex; 
+    justify-content: space-around;
+    width: 100%; 
+  }
+
+
+.menu-top ul {
+    
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+  }
+
+.menu-top a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-top a:hover{
+    color: #000000;
+}
+  
+.menu-top li {
+    margin: 0 20px; 
+    font-size: 18px; 
+  }
+
+.sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff; 
+    width: 1000px;
+    margin: 0 auto; 
+    padding: 100px 90px;
+    border-radius: 20px;
+    box-shadow: 8px 10px;
+  }
+  
+.sobre h1 {
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: xxx-large;
+  }
+  
+.sobre-texto { 
+    display: flex; /* Criar um flexbox para a coluna de texto */
+    flex-direction: column;
+    width: 60%; /* Define a largura da coluna de texto */
+  }
+  
+.sobre-texto p {
+    font-size: medium;
+    /* Adicionar um espaçamento entre os parágrafos, se desejar */
+    margin-bottom: 15px; 
+  }
+  
+.img { /* Container para a imagem */
+    width: 30%; /* Ajuste a largura da imagem */
+    float: right; /* Posiciona a imagem à direita */
+    text-align: right; /* Centraliza a imagem horizontalmente */
+  }
+  
+.img img {
+    background-color: black;
+    width: 100%; /* A imagem ocupa 100% do espaço do container */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção da imagem */
+  }
+
+.img1{
+    border-radius: 20px 20px 0 0;
+    border: 2px solid;
+    margin: 10px;
+    box-shadow: 5px 5px;
+  }
+
+.img2{
+    border-radius: 0 0 20px 20px;
+    border: 2px solid;
+    margin: 10px 10px 0 10px;
+    box-shadow: 5px 5px;
+  }
+
+
+.skills {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 1000px;
+    padding: 100px 90px;
+    box-shadow: 8px 10px #000000;
+}
+
+.skill {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+.skills h2{
+    padding-bottom: 30px;
+    margin-top: 0;
+    padding-top: 0;
+    font-size:xx-large;
+    
+}  
+
+.skill-name {
+    font-weight: bolder;
+    font-size: large;
+    margin-right: 10px;
+  }
+
+.skill-bar {
+    background-color: #bdbdbd;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.2);
+    height: 15px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden; /* Para o preenchimento do progresso */
+  }
+
+.skill-progress {
+    background-color: #1dd405; /* Cor verde para o progresso */
+    height: 15px;
+    width: 0%; /* Começa com 0% de largura */
+    border-radius: 5px 5px 5px 5px; /* Curva a borda esquerda */
+  }
+
+.button {
+    --main-focus: #2d8cf0;
+    --font-color: #323232;
+    --bg-color-sub: #dedede;
+    --bg-color: #eee;
+    --main-color: #323232;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+.download-cv {
+    background-color: #fff;
+    padding: 90px;
+    width: 1000px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+.download-content {
+    text-align: center; /* Centraliza o texto dentro do span */
+}
+
+#download{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size:large;
+}
+
+.download-cv a{
+    text-decoration: none;
+
+}
+  
+.button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(22px);
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width:29px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .button:hover {
+    background: var(--bg-color);
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+
+  .contato {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 1000px;
+    padding: 100px 90px;
+    box-shadow: 8px 10px #000000;
+    text-align: center; /* Centralizar o conteúdo da div */
+}
+
+.contato h2 {
+    padding-bottom: 30px;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: xx-large;
+}
+
+.contato p {
+    margin-bottom: 15px; /* Espaçamento entre os parágrafos */
+    font-size: large; /* Tamanho da fonte dos parágrafos */
+}
+
+.contato a { /* Remover sublinhado do link */
+    text-decoration: none;
+    color: #007bff; /* Cor azul para o link */
+}
